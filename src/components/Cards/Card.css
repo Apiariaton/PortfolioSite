@@ -1,0 +1,60 @@
+.card_container
+{
+    height:20rem;
+    width:14rem;
+    background-color: white;
+    border: solid black 0.05rem;
+    margin-top: 15%;
+    margin-bottom:10%;
+    justify-content: center;
+    flex-direction:column;
+    text-align:center;
+    color:black;
+    text-decoration:none;
+}
+
+.card_image {
+    height:10rem;
+    width:10rem;
+    border-radius: 50% 50%;
+    margin-top:10%;
+    margin-bottom: 5%;
+    margin:10%;
+}
+
+.card_title {
+    font-family:'Forum';
+    font-size:1.5rem;
+    margin-top:5%;
+    margin-bottom:5%;
+
+}
+
+.card_technologies {
+    font-family:'Forum';
+    font-size:1.1rem;
+
+}
+
+.code_card {
+    position:absolute;
+    height:20rem;
+    width:14rem;
+    background-color:#000000;
+    opacity: 0.8;
+    color:white;
+    font-size:2rem;
+    font-family: 'Forum';
+    display:flex;
+    justify-content:space-around;
+    flex-flow:column;
+}
+
+.code_card a {
+    text-decoration: none;
+    color:white;
+}
+
+.code_card a:hover {
+    text-decoration: orange underline;
+}

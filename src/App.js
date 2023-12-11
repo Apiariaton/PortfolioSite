@@ -1,24 +1,42 @@
-import logo from './logo.svg';
 import './App.css';
+import {RouterProvider,createBrowserRouter} from 'react-router-dom';
+import ErrorPage from "./components/Pages/ErrorPage";
+import HomePage from "./components/Pages/HomePage";
+import AboutPage from "./components/Pages/AboutPage";
+import ProjectsPage from "./components/Pages/ProjectsPage";
+import NavigationBar from './components/Navigation/NavigationBar';
+import {Fragment} from 'react'; 
+
+const errorPage = <Fragment><NavigationBar/><ErrorPage error="Page not found..."/></Fragment>;
+
+const router = createBrowserRouter(
+[{
+name:'Navigation Bar',
+path:'/',
+element: <NavigationBar/>,  
+errorElement:errorPage,
+children: [
+{
+name:'Home',
+path: '/',
+element: <HomePage/>,
+},
+{
+name:'About',
+path: '/about',
+element: <AboutPage/>,
+},
+{
+name:'Projects',
+path: '/projects',
+element: <ProjectsPage/>,
+},
+]}]);
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <RouterProvider router={router}></RouterProvider>
   );
 }
 
