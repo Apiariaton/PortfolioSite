@@ -1,0 +1,91 @@
+@font-face {
+    font-family: 'KiwiMaru';
+    src: url('../../fonts/KiwiMaru-Medium.ttf');
+}
+
+@font-face {
+    font-family: 'Knewave';
+    src: url('../../fonts/Knewave-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Forum';
+    src: url('../../fonts/Forum-Regular.ttf');
+}
+
+.mobile_header {
+    height: 16.666vh;
+    background-color: #001D3F; 
+    align-items: center;
+    display:flex;
+    text-decoration: none;
+}
+
+.initial_items {
+    display:flex;
+    width: 30vw;
+    justify-content: space-between;
+
+}
+
+.initial_items_mobile {
+    flex-direction: column;
+    display:flex;
+    width: 30vw;
+    justify-content: space-between;
+
+}
+
+.initial_items_laptop {
+    display:flex;
+    width: 30vw;
+    justify-content: space-between;
+
+}
+
+.spacer {
+    width:60vw;
+}
+
+
+.mobile_navlink {
+    color:white;
+    font-family: 'KiwiMaru';
+    font-size: 5vh;
+    width: 5vw;
+    margin-left:5%;
+    text-decoration: none;
+}
+
+.mobile_navlink_projects {
+
+    color:#FFFBD2;
+    font-family: 'Knewave';
+    font-size: 5vh;
+    margin-left:30%;
+    margin-right:-15%;
+    text-decoration: none;
+}
+
+.laptop_navlink_projects {
+
+    color:#FFFBD2;
+    font-family: 'Knewave';
+    font-size: 5vh;
+    margin-right:15%;
+    text-decoration: none;
+}
+
+.active_link {
+    text-decoration: underline;
+}
+
+
+
+.initial_items {
+    display:flex;
+    width: 40vw;
+    justify-content: space-between;
+
+}
+
