@@ -5,7 +5,7 @@ function PhonePanel(props)
 {
 let homeContent = <div className="phone_panel">
 <div className="profile_container">
-    <img className="profile_img" src={ProfileImg}></img>    
+    <img className="profile_img" alt="profile_image" src={ProfileImg}></img>    
     <div className="profile_desc">William Holder</div>
     <div className="profile_desc_two"><a href="https://www.linkedin.com/in/william-holder-b13151244/">Programmer</a></div>
 </div>    

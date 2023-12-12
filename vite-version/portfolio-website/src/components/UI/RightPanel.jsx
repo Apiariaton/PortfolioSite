@@ -3,7 +3,7 @@ import profileImg from "../../images/ProfileImg.jpg";
 import {Fragment} from 'react';
 
 let homeContent = <div className="right_panel_background_home">
-<img className="profile_image" src={profileImg}></img>
+<img className="profile_image" alt="profile_image" src={profileImg}></img>
 </div>;
 
 let aboutContent = <div className="right_panel_background_home">
@@ -23,7 +23,7 @@ function RightPanel(props)
 if (props.size === "desktop")
 {
     homeContent = <div className="right_panel_background_home">
-    <img className="profile_image_desktop" src={profileImg}></img>
+    <img className="profile_image_desktop" alt=" " src={profileImg}></img>
     </div>;
     
     aboutContent = <div className="right_panel_background_home">

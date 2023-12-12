@@ -27,7 +27,7 @@ function ProjectsPage()
     let mobileContent = <Fragment> {loadCards ? <div className="projects_page_background_mobile"><Cards cards={projectCards}></Cards> </div> : <ErrorPage error={errorMessage}></ErrorPage>}
     </Fragment>;
 
-useEffect(()=>{dispatch(fetchCardData());},[dispatch,fetchCardData,loadCards]);
+useEffect(()=>{dispatch(fetchCardData());},[dispatch,loadCards]);
 
 
 return <Fragment>
