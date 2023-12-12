@@ -4,7 +4,7 @@ import {Fragment} from 'react';
 
 
 let homeContent = <div class="container_panels"><div className="background_left_panel_home">
-<div className="profile_description">William Holder<br/> <div className="profile_description_sub_text"><a href="https://www.linkedin.com/in/william-holder-b13151244/"> Front-End Developer </a> </div></div>
+<div className="profile_description">William Holder<br/> <div className="profile_description_sub_text"><a href="https://www.linkedin.com/in/william-holder-b13151244/"> Programmer </a> </div></div>
 </div>
 <RightPanel page="home"/></div>;
 
